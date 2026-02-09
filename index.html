@@ -3,126 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echoooo Media | Premium Advertising</title>
+    <title>Echoooo | Influencer Marketing Agency</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        /* Echo Identity: Deep Purple, Black, and White */
         :root {
-            --echo-purple: #6d28d9; /* Deep Vibrant Purple */
-            --echo-dark-purple: #4c1d95;
-            --echo-black: #0a0a0a;
+            --purple: #8b5cf6;
+            --deep-purple: #1e1b4b;
+            --black: #050505;
         }
-        body { background-color: var(--echo-black); color: white; }
-        .echo-gradient { background: linear-gradient(135deg, #6d28d9 0%, #000000 100%); }
-        .text-purple { color: #a78bfa; }
-        .bg-purple { background-color: #6d28d9; }
+        body { background-color: var(--black); color: #ffffff; overflow-x: hidden; }
         
-        .marquee { display: flex; overflow: hidden; gap: 2rem; background: rgba(255,255,255,0.03); padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .marquee-content { flex-shrink: 0; display: flex; gap: 6rem; animation: scroll 60s linear infinite; }
-        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+        /* Animated Background Glows to make it feel "Alive" */
+        .glow {
+            position: absolute; width: 40vw; height: 40vw;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%; z-index: -1; filter: blur(60px); animation: move 20s infinite alternate;
+        }
+        @keyframes move { from { transform: translate(-10%, -10%); } to { transform: translate(20%, 20%); } }
 
-        /* Floating Animation for "Living" feel */
-        .float { animation: floating 3s ease-in-out infinite; }
-        @keyframes floating { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+        /* Smooth Scrolling Text */
+        .marquee { display: flex; overflow: hidden; background: rgba(255,255,255,0.02); border-y: 1px solid rgba(255,255,255,0.1); padding: 30px 0; }
+        .marquee-content { display: flex; gap: 4rem; animation: scroll 40s linear infinite; font-weight: 900; color: rgba(255,255,255,0.1); text-transform: uppercase; font-size: 1.5rem; }
+        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        .btn-purple {
+            background: var(--purple);
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-purple:hover { transform: scale(1.05); box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); }
     </style>
 </head>
-<body class="font-sans antialiased">
+<body>
 
-    <section class="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-900/30 rounded-full blur-[120px]"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-900/20 rounded-full blur-[120px]"></div>
+    <div class="glow" style="top: -10%; left: -10%;"></div>
+    <div class="glow" style="bottom: 10%; right: -5%; animation-delay: -5s;"></div>
 
-        <div data-aos="zoom-out" data-aos-duration="2000">
-            <h1 class="text-7xl md:text-9xl font-black tracking-tighter mb-4 uppercase">
-                ECH<span class="text-purple">OOOO</span>
+    <section class="h-screen flex flex-col items-center justify-center text-center px-6 relative">
+        <div data-aos="zoom-in" data-aos-duration="1500">
+            <h1 class="text-8xl md:text-[12rem] font-black tracking-tighter leading-none mb-4">
+                ECH<span class="text-purple-500">OOOO</span>
             </h1>
-            <p class="text-lg md:text-2xl tracking-[1em] uppercase font-thin text-gray-400">Media Advertising</p>
+            <p class="text-lg md:text-2xl tracking-[1.2em] uppercase font-light text-gray-400 mb-12">Media Advertising</p>
         </div>
 
-        <div class="mt-16 flex gap-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="h-[1px] w-12 bg-purple-600 self-center"></div>
-            <p class="text-xs font-bold tracking-widest uppercase text-purple">Influencing the GCC since 2018</p>
-            <div class="h-[1px] w-12 bg-purple-600 self-center"></div>
-        </div>
-    </section>
-
-    <section class="py-20 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="h-[500px] overflow-hidden rounded-3xl group" data-aos="fade-right">
-                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000" 
-                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Influencer Content">
+        <div class="flex gap-12 mt-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center">
+                <span class="block text-3xl font-bold">20K+</span>
+                <span class="text-[10px] text-purple-400 uppercase tracking-widest">Influencers</span>
             </div>
-            <div class="grid grid-rows-2 gap-4">
-                <div class="rounded-3xl bg-neutral-900 p-12 flex flex-col justify-center" data-aos="fade-left">
-                    <h2 class="text-4xl font-bold mb-4">20,000+</h2>
-                    <p class="text-gray-500 uppercase tracking-widest text-sm">Elite Influencer Network</p>
-                </div>
-                <div class="overflow-hidden rounded-3xl" data-aos="fade-left" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1000" 
-                         class="w-full h-full object-cover opacity-50 hover:opacity-100 transition duration-700" alt="Campaign Event">
-                </div>
+            <div class="w-[1px] h-12 bg-white/10"></div>
+            <div class="text-center">
+                <span class="block text-3xl font-bold">GCC</span>
+                <span class="text-[10px] text-purple-400 uppercase tracking-widest">Market Leader</span>
             </div>
         </div>
     </section>
 
-    <section class="py-10">
-        <div class="marquee">
-            <div class="marquee-content text-2xl font-black text-neutral-800">
-                <span>X-CITE</span> <span>MCDONALDS</span> <span>LULU</span> <span>SULTAN CENTER</span> <span>CARREFOUR</span> <span>KUDU</span> <span>SHAWARMER</span> <span>EUREKA</span> <span>WEST ELM</span> <span>NINO</span> <span>BARNS CAFE</span>
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="aspect-square rounded-3xl overflow-hidden border border-white/5" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
             </div>
-            <div class="marquee-content text-2xl font-black text-neutral-800">
-                <span>X-CITE</span> <span>MCDONALDS</span> <span>LULU</span> <span>SULTAN CENTER</span> <span>CARREFOUR</span> <span>KUDU</span> <span>SHAWARMER</span> <span>EUREKA</span> <span>WEST ELM</span> <span>NINO</span> <span>BARNS CAFE</span>
+            <div class="aspect-square rounded-3xl overflow-hidden border border-white/5 md:mt-12" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
             </div>
-        </div>
-    </section>
-
-    <section class="py-32 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-16">
-            <div class="text-left" data-aos="fade-up">
-                <div class="text-5xl font-thin text-purple/30 mb-6">01</div>
-                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Visits</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Strategic venue coverage by influencers that perfectly align with your brand's core values.</p>
-            </div>
-            <div class="text-left" data-aos="fade-up" data-aos-delay="100">
-                <div class="text-5xl font-thin text-purple/30 mb-6">02</div>
-                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Unboxing</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Creative storytelling through product reveals that build immediate trust and consumer desire.</p>
-            </div>
-            <div class="text-left" data-aos="fade-up" data-aos-delay="200">
-                <div class="text-5xl font-thin text-purple/30 mb-6">03</div>
-                <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Events</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Full-scale influencer management for high-profile launches and corporate celebrations.</p>
+            <div class="aspect-square rounded-3xl overflow-hidden border border-white/5" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
             </div>
         </div>
     </section>
 
-    <footer class="bg-neutral-950 py-32 px-6 border-t border-white/5">
-        <div class="max-w-6xl mx-auto flex flex-col items-center">
-            <h2 class="text-5xl font-black tracking-tighter mb-16">ECHOOOO</h2>
-            
-            <div class="grid md:grid-cols-2 gap-20 text-center w-full max-w-4xl mb-24">
-                <div>
-                    <h4 class="text-purple font-bold uppercase tracking-widest text-xs mb-6">Kuwait City</h4>
-                    <p class="text-gray-400 text-sm font-light leading-loose">Dar Al-Awadi Tower<br>Ahmed Al-Jaber Street, Floor 18</p>
-                </div>
-                <div>
-                    <h4 class="text-purple font-bold uppercase tracking-widest text-xs mb-6">Dubai</h4>
-                    <p class="text-gray-400 text-sm font-light leading-loose">Iris Bay Tower<br>Business Bay, UAE</p>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row gap-6">
-                <a href="https://wa.me/96555446620" target="_blank" class="bg-purple text-white px-12 py-5 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-500 shadow-[0_0_30px_rgba(109,40,217,0.3)]">
-                    Start Campaign
-                </a>
-                <a href="https://www.instagram.com/echoooo.co/" target="_blank" class="bg-transparent border border-white/20 text-white px-12 py-5 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-500">
-                    Instagram
-                </a>
-            </div>
-
-            <p class="mt-20 text-[10px] text-neutral-600 font-bold uppercase tracking-[1em]">WWW.ECHOOOO.NET</p>
+    <section class="marquee py-12">
+        <div class="marquee-content">
+            <span>X-CITE</span> <span>THE SULTAN CENTER</span> <span>LULU</span> <span>CARREFOUR</span> <span>MCDONALDS</span> <span>EUREKA</span> <span>WEST ELM</span> <span>NINO</span> <span>BARNS CAFE</span> <span>X-CITE</span> <span>THE SULTAN CENTER</span> <span>LULU</span> <span>CARREFOUR</span> <span>MCDONALDS</span>
         </div>
+    </section>
+
+    <section class="py-32 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-12 rounded-[40px] bg-white/5 border border-white/10 hover:bg-purple-600/10 transition group" data-aos="fade-right">
+                <h3 class="text-purple-400 font-black text-xs uppercase tracking-widest mb-6">Service 01</h3>
+                <h4 class="text-3xl font-bold mb-4 uppercase">Visits</h4>
+                <p class="text-gray-400 text-sm">Authentic venue coverage and live stories across the GCC.</p>
+            </div>
+            <div class="p-12 rounded-[40px] bg-purple-600 border border-purple-400 transition group" data-aos="fade-up">
+                <h3 class="text-white/60 font-black text-xs uppercase tracking-widest mb-6">Service 02</h3>
+                <h4 class="text-3xl font-bold mb-4 uppercase">Unboxing</h4>
+                <p class="text-white/80 text-sm">High-impact product reveals that drive immediate sales.</p>
+            </div>
+            <div class="p-12 rounded-[40px] bg-white/5 border border-white/10 hover:bg-purple-600/10 transition group" data-aos="fade-left">
+                <h3 class="text-purple-400 font-black text-xs uppercase tracking-widest mb-6">Service 03</h3>
+                <h4 class="text-3xl font-bold mb-4 uppercase">Events</h4>
+                <p class="text-gray-400 text-sm">Exclusive influencer management for corporate event launches.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-32 bg-black border-t border-white/5 text-center px-6">
+        <h2 class="text-6xl font-black mb-12 tracking-tighter">ECHOOOO</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto mb-20 text-gray-400 uppercase tracking-widest text-[10px]">
+            <div>
+                <p class="text-white font-bold mb-2">Kuwait</p>
+                <p>Dar Al-Awadi Tower, Floor 18</p>
+            </div>
+            <div>
+                <p class="text-white font-bold mb-2">Dubai</p>
+                <p>Iris Bay Tower, Business Bay</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 justify-center">
+            <a href="https://wa.me/96555446620" class="btn-purple px-16 py-5 rounded-full font-black uppercase tracking-widest text-xs">
+                Start Campaign
+            </a>
+            <a href="https://www.instagram.com/echoooo.co/" class="bg-white/5 border border-white/20 px-16 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black transition">
+                Instagram
+            </a>
+        </div>
+        <p class="mt-20 text-gray-600 text-[10px] tracking-[1em]">WWW.ECHOOOO.NET</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
