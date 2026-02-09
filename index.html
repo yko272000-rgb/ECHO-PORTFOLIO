@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echoooo Media | GCC Advertising</title>
+    <title>Echoooo Media | Kuwait • Dubai • Riyadh</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
@@ -13,16 +13,9 @@
         }
         body { background-color: var(--black); color: #ffffff; overflow-x: hidden; }
         
-        /* Dynamic Font for Mobile */
-        .brand-name {
-            font-size: 18vw;
-            line-height: 0.9;
-        }
-        @media (min-width: 768px) {
-            .brand-name { font-size: 11rem; }
-        }
+        .brand-name { font-size: 18vw; line-height: 0.9; }
+        @media (min-width: 768px) { .brand-name { font-size: 11rem; } }
 
-        /* Animated Background Glows */
         .glow {
             position: absolute; width: 60vw; height: 60vw;
             background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(0,0,0,0) 70%);
@@ -64,21 +57,31 @@
 
     <section class="py-10 px-6 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="h-[450px] rounded-[2.5rem] overflow-hidden group border border-white/5" data-aos="fade-right">
-                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80" 
-                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 shadow-2xl" 
-                     alt="GCC Business">
-            </div>
-            <div class="grid grid-rows-2 gap-6">
-                <div class="rounded-[2.5rem] overflow-hidden group border border-white/5" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&q=80" 
-                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700" 
-                         alt="Regional Marketing">
+            <div class="h-[500px] rounded-[2.5rem] overflow-hidden group border border-white/5 relative" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1549468057-5b7fa1a41d7a?auto=format&fit=crop&q=80" 
+                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700" 
+                     alt="Kuwait City">
+                <div class="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md px-4 py-2 rounded-xl">
+                    <p class="text-xs font-bold tracking-widest uppercase italic">Kuwait HQ</p>
                 </div>
-                <div class="rounded-[2.5rem] overflow-hidden group border border-white/5" data-aos="fade-left" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" 
+            </div>
+            
+            <div class="grid grid-rows-2 gap-6">
+                <div class="rounded-[2.5rem] overflow-hidden group border border-white/5 relative" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1586724230411-9a746522776c?auto=format&fit=crop&q=80" 
                          class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700" 
-                         alt="Agency Office">
+                         alt="Riyadh Branch">
+                    <div class="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md px-4 py-2 rounded-xl">
+                        <p class="text-xs font-bold tracking-widest uppercase italic">Riyadh Branch</p>
+                    </div>
+                </div>
+                <div class="rounded-[2.5rem] overflow-hidden group border border-white/5 relative" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80" 
+                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700" 
+                         alt="Dubai Branch">
+                    <div class="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md px-4 py-2 rounded-xl">
+                        <p class="text-xs font-bold tracking-widest uppercase italic">Dubai Branch</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,11 +98,11 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="p-10 rounded-[2.5rem] bg-zinc-900/40 border border-white/5 hover:border-purple-500/40 transition-all" data-aos="fade-up">
                 <h4 class="text-2xl font-bold mb-3 uppercase italic">Visits</h4>
-                <p class="text-zinc-500 text-xs leading-relaxed">Strategic venue coverage by top influencers that connect with the GCC audience.</p>
+                <p class="text-zinc-500 text-xs leading-relaxed">Strategic venue coverage by top influencers connecting with the GCC audience.</p>
             </div>
             <div class="p-10 rounded-[2.5rem] bg-purple-600 shadow-[0_0_50px_rgba(139,92,246,0.2)]" data-aos="fade-up" data-aos-delay="100">
                 <h4 class="text-2xl font-bold mb-3 uppercase italic text-white">Unboxing</h4>
-                <p class="text-purple-100 text-xs leading-relaxed font-medium">Captivating product reveals designed to drive immediate brand desire and trust.</p>
+                <p class="text-purple-100 text-xs leading-relaxed font-medium">Captivating product reveals designed to drive immediate brand trust.</p>
             </div>
             <div class="p-10 rounded-[2.5rem] bg-zinc-900/40 border border-white/5" data-aos="fade-up" data-aos-delay="200">
                 <h4 class="text-2xl font-bold mb-3 uppercase italic">Events</h4>
@@ -120,10 +123,14 @@
             </a>
         </div>
         
-        <div class="mt-20 grid grid-cols-2 gap-8 max-w-2xl mx-auto text-[8px] text-zinc-600 uppercase tracking-[0.4em] font-bold">
+        <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto text-[8px] text-zinc-600 uppercase tracking-[0.4em] font-bold">
             <div>
                 <p class="text-zinc-400 mb-1">Kuwait HQ</p>
                 <p>Dar Al-Awadi, Sharq</p>
+            </div>
+            <div>
+                <p class="text-zinc-400 mb-1">Riyadh Branch</p>
+                <p>King Fahd Road, KAFD</p>
             </div>
             <div>
                 <p class="text-zinc-400 mb-1">Dubai Branch</p>
